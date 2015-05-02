@@ -4,8 +4,22 @@ PlayJson Marshalling for Akka Http and catching errors
 
 Use Example:
 
-```scala
+# build.sbt
 
+```scala
+resolvers ++= Seq(
+  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+)
+
+libraryDependencies ++= {
+  Seq(
+    "com.kreattiewe.akka" %% "play-json-marshalling" % "1.0"  
+    )
+}
+
+```
+
+```scala
 //Here you catch the errors
 val myRejectionHandler = RejectionHandler.newBuilder()
     .handle {
@@ -21,5 +35,4 @@ val routes =
       }
     }
   }
-
 ```
