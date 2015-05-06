@@ -8,7 +8,7 @@ sonatypeProfileName := "com.kreattiewe"
 
 name := """play-json-marshalling"""
 
-version := "1.0"
+version := "1.0.1"
 
 scalaVersion := "2.11.6"
 
@@ -26,11 +26,11 @@ publishArtifact in Test := false
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= {
-  val akkaStreamV = "1.0-M5"
+  val akkaStreamV = "1.0-RC2"
   Seq(
     "com.typesafe.akka" %% "akka-http-core-experimental" % akkaStreamV,
-    "com.typesafe.akka" %% "akka-http-experimental" % akkaStreamV,
-    "com.typesafe.play" % "play-json_2.11" % "2.4.0-M3",
+    "com.typesafe.akka" %% "akka-http-scala-experimental" % akkaStreamV,
+    "com.typesafe.play" % "play-json_2.11" % "2.4.0-RC1",
     "org.scalatest" %% "scalatest" % "2.2.4" % "test"
   )
 }

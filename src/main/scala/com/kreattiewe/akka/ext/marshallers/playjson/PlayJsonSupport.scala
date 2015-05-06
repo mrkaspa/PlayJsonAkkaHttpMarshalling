@@ -1,19 +1,18 @@
 package com.kreattiewe.akka.ext.marshallers.playjson
 
+import akka.http.scaladsl.marshalling._
+import akka.http.scaladsl.model.MediaTypes
+import akka.http.scaladsl.unmarshalling._
 import play.api.libs.json._
 
-/**
- * Created by michelperez on 3/30/15.
- */
-
-
-import akka.http.marshalling.{PredefinedToEntityMarshallers, ToEntityMarshaller}
-import akka.http.model.MediaTypes
-import akka.http.unmarshalling.{FromEntityUnmarshaller, PredefinedFromEntityUnmarshallers}
 import akka.stream.FlowMaterializer
 import play.api.libs.json.{Json, Reads, Writes}
 
 import scala.concurrent.ExecutionContext
+
+/**
+ * Created by michelperez on 3/30/15.
+ */
 
 object PlayJsonSupport extends PlayJsonSupport
 

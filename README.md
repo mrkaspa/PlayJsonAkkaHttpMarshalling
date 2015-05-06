@@ -36,3 +36,15 @@ val routes =
     }
   }
 ```
+
+#Changelog
+
+## 1.0.1
+
+- Support for akka http 1.0-RC2
+
+## 1.0
+
+- Support for akka http 1.0-M5
+- CRUD For Relationships
+  
